@@ -1,0 +1,7 @@
+messages:
+  teleporting: "§eTeleporting to world '{world}'..."
+  success: "§aYou have been successfully teleported!"
+  world-not-found: "§cError: World '{world}' was not found or is not loaded."
+  location-not-safe: "§cError: The spawn point of world '{world}' is not safe!"
+  generic-failure: "§cError: Teleportation failed due to an unknown reason."
+  set-spawn: "§aSpawn for world '{world}' set to §f{coords}"
