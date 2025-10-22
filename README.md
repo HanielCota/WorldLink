@@ -99,6 +99,30 @@ cd WorldLink
 # The .jar file will be in build/libs/
 ```
 
+## 📦 Releases
+
+### Automatic Releases
+
+This project uses GitHub Actions to automatically create releases. Releases are generated automatically when you push a version tag:
+
+```bash
+# Create and push a new version tag
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+The workflow will:
+1. Build the plugin JAR file
+2. Create a GitHub release with the tag version
+3. Attach the JAR file to the release
+4. Generate release notes automatically
+
+### Release Workflow
+
+- **Releases**: Triggered by pushing tags matching `v*.*.*` (e.g., `v1.0.0`, `v2.1.3`)
+- **Build CI**: Runs on every push to main/master branch and pull requests
+- **Artifacts**: Built JAR files are attached to each release
+
 ## 🏗️ Architecture
 
 ### Project Structure
